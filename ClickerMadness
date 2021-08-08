@@ -1,22 +1,3 @@
-local mod = require(game:GetService("Players").SmokeBoB06.PlayerScripts.Aero.Controllers.UI.Pets)
-
-
-print('--UPVALUES--')
-for i, v in pairs(getupvalues(mod.CalculatePetCapacity)) do
-    print(i, v)
-end
-print("---")
-print("--CONSTANTS--")
-for i, v in pairs(getconstants(mod.CalculatePetCapacity)) do
-    print(i, v)
-end
-setconstant(mod.CalculatePetCapacity, 7, 250)
-
-setupvalue(calculateDamage, 1, 500)
-
-print("Total Damage: ", calculateDamage()) -- 200 damage
-
-
 getgenv().autotap = false
 getgenv().autoRebirth = false
 getgenv().BuyEgg = false
@@ -144,41 +125,3 @@ d:Button("Teleport Selected",function()
         teleportWorld(selectedWorld)    
     end
 end)
-
-
-
-
-
-
--- b:Label("Pretty Useless NGL",{
---     TextSize = 25; -- Self Explaining
---     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
---     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-    
--- }) 
-
--- b:Slider("Slider",{
---     min = 10; -- min value of the slider
---     max = 50; -- max value of the slider
---     precise = true; -- max 2 decimals
--- },function(value)
---     print(value)
--- end)
-
--- b:Dropdown("Dropdown",{"A","B","C"},true,function(mob) --true/false, replaces the current title "Dropdown" with the option that t
---     print(mob)
--- end)
-
--- b:Bind("Bind",Enum.KeyCode.C,function() --Default bind
---     print("Yes")
--- end)
-
--- b:ColorPicker("ColorPicker",Color3.fromRGB(255,0,0),function(color) --Default color
---     print(color)
--- end)
-
--- b:Box("Box","number",function(value) -- "number" or "string"
---     print(value)
--- end)
-
-
